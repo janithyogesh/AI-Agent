@@ -1,20 +1,21 @@
-langchain               # Core library for building LLM-powered applications
-wikipedia               # Enables searching and summarizing content from Wikipedia
-langchain-community     # Community-contributed tools and integrations for LangChain
-langchain-openai        # OpenAI integration for GPT models in LangChain
-langchain-anthropic     # Anthropic Claude integration for LangChain
-python-dotenv           # Load environment variables from a .env file
-pydantic                # Data validation and type enforcement, used with LangChain
+# Free AI Agent Requirements
 
-# These are the packages that you need to instal in python env.
+transformers>=4.21.0        # Hugging Face transformers for local AI models
+torch>=1.12.0              # PyTorch for running the models
+wikipedia>=1.4.0           # Wikipedia search functionality
+requests>=2.28.0           # HTTP requests for APIs (if needed later)
 
-# Without virtual environment
-# AI Agent> pip install -r .\requirements.txt
+# Optional but recommended:
+datasets>=2.0.0            # For additional model datasets
+tokenizers>=0.13.0         # Fast tokenizers (usually comes with transformers)
 
-# To install globally
-# AI Agent> pip3 install -r .\requirements.txt
+# Installation commands:
 
-# Create a virtual environment
-# AI Agent> python -m venv venv 
-# AI Agent> .\venv\Scripts\activate
-# AI Agent> pip install -r .\requirements.txt
+# Without virtual environment:
+# pip install -r requirements.txt
+
+# With virtual environment (recommended):
+# python -m venv ai_agent_env
+# ai_agent_env\Scripts\activate  # Windows
+# source ai_agent_env/bin/activate  # Linux/Mac
+# pip install -r requirements.txt
